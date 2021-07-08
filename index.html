@@ -65,9 +65,10 @@
       });
 
       $("#addButton").click(function (e) {
+        $.magnificPopup.close();
         e.preventDefault();
         $("ol").append("<li>Appended item</li>");
-        $.magnificPopup.close();
+       
       });
     });
 
