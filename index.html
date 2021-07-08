@@ -63,7 +63,8 @@
 
       $("#addButton").click(function (e) {
         $.magnificPopup.close();
-        
+        e.preventDefault();
+        e.stopPropagation();
         $("ol").append("<li>Appended item</li>");
        
       });
