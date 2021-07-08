@@ -50,6 +50,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 <h2>Modal Example</h2>
 
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
 <!-- Trigger/Open The Modal -->
 <button id="myBtn">Open Modal</button>
 
@@ -95,6 +101,12 @@ window.onclick = function(event) {
   }
 }
 
+
+  $("#addButton").click(function(event){
+    event.preventDefault();
+    $("ol").append("<li>Appended item</li>");
+    modal.style.display = "none";
+  });
 
 
 </script>
